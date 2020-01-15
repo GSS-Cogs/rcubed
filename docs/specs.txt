@@ -1,0 +1,45 @@
+# Reference data Registry and Repository - rcubed
+
+# General/rough specifications
+
+Can act as a view over the current github ref_* table2qb configuration files.
+
+Serves columns.csv, components.csv, codelists (CSV concept schemes) and codeslist-metadata, as well as CSVW schemas.
+
+Put CSVW style schemas next to the CSV and use link header properly.
+
+Serve CSV with the correct mimetype and char encoding.
+
+Allow specialization of table2qb configs based on URL path (e.g. common / family).
+
+Login via github credentials and commit back changes.
+
+Deal with github branches.
+
+Check consitency of table2qb configuration.
+
+Show which datasets use which dimensions / codelists.
+
+Allow editing of and addition of columns, components, codelists.
+
+Allow registering of external concept schemes, dimensions and classes.
+
+Create OWL class hierarchy mirroring SKOS concept scheme.
+
+OWL Class Hierarchy needs hints for disjoint union.
+
+OWL Class Hierarchy can add property restriction.
+
+Need to be able to put dimensions into a property hierarchy.
+
+Need to be able to express the range of dimension properties consistent with the property hierarchy.
+
+Ability to reconcile SKOS concepts against Wikidata and store the results.
+
+Ability to add arbitrary OWL assertions, e.g. IFP.
+
+Ability to annotate SKOS concepts to say whether they're proper aggregates (look at XKOS).
+
+Ability to add alt labels and define notation datatypes.
+
+Split out SKOS notation from concept URI.
