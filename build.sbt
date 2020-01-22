@@ -12,6 +12,7 @@ libraryDependencies += "com.typesafe.play" %% "play-slick" % "4.0.2"
 libraryDependencies += "com.h2database" % "h2" % "1.4.199"
 libraryDependencies += specs2 % Test
 libraryDependencies += ws
+libraryDependencies ++= Seq(evolutions, jdbc)
 
 // Adds additional packages into Twirl
 //TwirlKeys.templateImports += "gsscogs.uk.controllers._"
