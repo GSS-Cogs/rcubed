@@ -27,7 +27,7 @@
             {
               "titles": "Value",
               "required": false,
-              "dc:description": "an observable value".
+              "dc:description": "an observable value",
               "name": "value",
               "datatype": "number",
               "propertyUrl": "http://gss-data.org.uk/def/measure/{measure_type}"
@@ -247,7 +247,7 @@
               "rdfs:range": {
                   "@id": "http://gss-data.org.uk/def/paid-hours-worked"
               },
-              "skos:notation": "percentage"
+              "skos:notation": "paid-hours-worked"
             }
         },
         {
