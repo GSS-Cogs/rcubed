@@ -30,7 +30,7 @@
               "dc:description": "an observable value",
               "name": "value",
               "datatype": "number",
-              "propertyUrl": "http://gss-data.org.uk/def/measure/{measure_type}"
+              "propertyUrl": "http://gss-data.org.uk/def/measure/{measure_type}",
               "aboutUrl": "http://gss-data.org.uk/data/cmd/cmd-ashe-tables-7-and-8/{year}/{geography}/{ashe_statistics}/{ashe_sex}/{ashe_working_pattern}/{ashe_hours_and_earnings}/{ashe_workplace_or_residence}/{measure_type}"
             },
             {
