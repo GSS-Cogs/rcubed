@@ -1,0 +1,291 @@
+
+{
+"@context": [
+  "http://www.w3.org/ns/csvw",
+  {
+    "@language": "en"
+  }],
+"dcat:distribution": [{
+      "@id": "gss_data/cmd/cmd-ashe-tables-7-and-8#distribution-csv",
+      "dc:title": "cmd ashe tables 7 and 8",
+      "dc:format": {"@value": "text/csv"},
+      "dcat:downloadURL": {"@id": "observations.csv"},
+      "prov:wasDerivedFrom": {"@id": "https://api.beta.ons.gov.uk/v1/datasets/ashe-tables-7-and-8"},
+      "dct:license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "dct:modified": "2020-01-21T16:37:00.172539",
+      "dct:publisher": "gov:office-for-national-statistics"
+    }],
+"dialect": {
+       "skipRows": 0,
+       "headerRowCount": 1
+     },
+"tables": [
+  {
+  "url": "observations.csv",
+  "tableSchema": {
+      "columns": [
+            {
+              "titles": "Value",
+              "required": false,
+              "dc:description": "an observable value".
+              "name": "value",
+              "datatype": "number",
+              "propertyUrl": "http://gss-data.org.uk/def/measure/{measure_type}"
+              "aboutUrl": "http://gss-data.org.uk/data/cmd/cmd-ashe-tables-7-and-8/{year}/{geography}/{ashe_statistics}/{ashe_sex}/{ashe_working_pattern}/{ashe_hours_and_earnings}/{ashe_workplace_or_residence}/{measure_type}"
+            },
+            {
+              "titles": "Marker",
+              "required": false,
+              "dc:description": "",
+              "name": "marker",
+              "datatype": "string",
+              "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#obsStatus",
+              "valueUrl": "http://gss-data.org.uk/def/concept/marker/{marker}",
+              "aboutUrl": "http://gss-data.org.uk/data/cmd/cmd-ashe-tables-7-and-8/{year}/{geography}/{ashe_statistics}/{ashe_sex}/{ashe_working_pattern}/{ashe_hours_and_earnings}/{ashe_workplace_or_residence}/{measure_type}"
+            },
+            {
+              "titles": "CV",
+              "required": false,
+              "dc:description": "",
+              "name": "cv",
+              "datatype": "number",
+              "propertyUrl": "http://gss-data.org.uk/def/attribute/cv",
+              "aboutUrl": "http://gss-data.org.uk/data/cmd/cmd-ashe-tables-7-and-8/{year}/{geography}/{ashe_statistics}/{ashe_sex}/{ashe_working_pattern}/{ashe_hours_and_earnings}/{ashe_workplace_or_residence}/{measure_type}"
+            },
+            {
+              "titles": "Year",
+              "required": true,
+              "dc:description": "the year",
+              "name": "year",
+              "datatype": "string",
+              "propertyUrl": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod",
+              "valueUrl": "http://reference.data.gov.uk/id/year/{year}",
+              "aboutUrl": "http://gss-data.org.uk/data/cmd/cmd-ashe-tables-7-and-8/{year}/{geography}/{ashe_statistics}/{ashe_sex}/{ashe_working_pattern}/{ashe_hours_and_earnings}/{ashe_workplace_or_residence}/{measure_type}"
+            },
+            {
+              "titles": "Geography",
+              "required": true,
+              "dc:description": "",
+              "name": "geography",
+              "datatype": {"format": "[A-Z][0-9]{8}"},
+              "propertyUrl": "http://purl.org/linked-data/sdmx/2009/dimension#refArea",
+              "valueUrl": "http://statistics.data.gov.uk/id/statistical-geography/{geography}",
+              "aboutUrl": "http://gss-data.org.uk/data/cmd/cmd-ashe-tables-7-and-8/{year}/{geography}/{ashe_statistics}/{ashe_sex}/{ashe_working_pattern}/{ashe_hours_and_earnings}/{ashe_workplace_or_residence}/{measure_type}"
+            },
+            {
+              "titles": "ashe statistics",
+              "required": true,
+              "dc:description": "",
+              "name": "ashe_statistics",
+              "datatype": "string",
+              "propertyUrl": "http://gss-data.org.uk/def/dimension/ashe-statistics",
+              "valueUrl": "http://gss-data.org.uk/def/dimension/ashe-statistics/{ashe-statistics}",
+              "aboutUrl": "http://gss-data.org.uk/data/cmd/cmd-ashe-tables-7-and-8/{year}/{geography}/{ashe_statistics}/{ashe_sex}/{ashe_working_pattern}/{ashe_hours_and_earnings}/{ashe_workplace_or_residence}/{measure_type}"
+            },
+            {
+              "titles": "ashe sex",
+              "required": true,
+              "dc:description": "",
+              "name": "ashe_sex",
+              "datatype": "string",
+              "propertyUrl": "http://gss-data.org.uk/def/dimension/ashe-sex",
+              "valueUrl": "http://gss-data.org.uk/def/dimension/ashe-sex/{ashe-sex}",
+              "aboutUrl": "http://gss-data.org.uk/data/cmd/cmd-ashe-tables-7-and-8/{year}/{geography}/{ashe_statistics}/{ashe_sex}/{ashe_working_pattern}/{ashe_hours_and_earnings}/{ashe_workplace_or_residence}/{measure_type}"
+            },
+            {
+              "titles": "ashe working pattern",
+              "required": true,
+              "dc:description": "",
+              "name": "ashe_working_pattern",
+              "datatype": "string",
+              "propertyUrl": "http://gss-data.org.uk/def/dimension/ashe-working-pattern",
+              "valueUrl": "http://gss-data.org.uk/def/dimension/ashe-working-pattern/{ashe-working-pattern}",
+              "aboutUrl": "http://gss-data.org.uk/data/cmd/cmd-ashe-tables-7-and-8/{year}/{geography}/{ashe_statistics}/{ashe_sex}/{ashe_working_pattern}/{ashe_hours_and_earnings}/{ashe_workplace_or_residence}/{measure_type}"
+            },
+            {
+              "titles": "ashe hours and earnings",
+              "required": true,
+              "dc:description": "",
+              "name": "ashe_hours_and_earnings",
+              "datatype": "string",
+              "propertyUrl": "http://gss-data.org.uk/def/dimension/ashe-hours-and-earnings",
+              "valueUrl": "http://gss-data.org.uk/def/dimension/ashe-hours-and-earnings/{ashe-hours-and-earnings}",
+              "aboutUrl": "http://gss-data.org.uk/data/cmd/cmd-ashe-tables-7-and-8/{year}/{geography}/{ashe_statistics}/{ashe_sex}/{ashe_working_pattern}/{ashe_hours_and_earnings}/{ashe_workplace_or_residence}/{measure_type}"
+            },
+            {
+              "titles": "ashe workplace or residence",
+              "required": true,
+              "dc:description": "",
+              "name": "ashe_workplace_or_residence",
+              "datatype": "string",
+              "propertyUrl": "http://gss-data.org.uk/def/dimension/ashe-workplace-or-residence",
+              "valueUrl": "http://gss-data.org.uk/def/dimension/ashe-workplace-or-residence/{ashe-workplace-or-residence}",
+              "aboutUrl": "http://gss-data.org.uk/data/cmd/cmd-ashe-tables-7-and-8/{year}/{geography}/{ashe_statistics}/{ashe_sex}/{ashe_working_pattern}/{ashe_hours_and_earnings}/{ashe_workplace_or_residence}/{measure_type}"
+            },
+            {
+              "titles": "Measure Type",
+              "required": true,
+              "dc:description": "",
+              "name": "measure_type",
+              "datatype": "string",
+              "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#obsStatus",
+              "valueUrl": "http://gss-data.org.uk/def/concept/marker/{marker}",
+              "aboutUrl": "http://gss-data.org.uk/data/cmd/cmd-ashe-tables-7-and-8/{year}/{geography}/{ashe_statistics}/{ashe_sex}/{ashe_working_pattern}/{ashe_hours_and_earnings}/{ashe_workplace_or_residence}/{measure_type}"
+          }]
+          }
+}],
+"qb:structure": {
+    "@id": "http://purl.org/linked-data/cube",
+    "@type": "qb:DataStructureDefinition",
+    "rdfs:comment": "indicates the structure to which this data set conforms",
+    "qb:component": [
+        {
+          "qb:dimension": {
+            "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod",
+            "@type": "qb:DimensionProperty",
+            "rdfs:label": "Reference Period",
+            "rdfs:range": {"@id": "http://www.w3.org/2006/time#Interval"},
+            "qb:codeList": {"@id": "TODO WHEN WE'VE FIGURED OUT NEW URL STRUCTURE" }
+            }
+        },
+        {
+          "qb:dimension": {
+            "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refArea",
+            "@type": "qb:DimensionProperty",
+            "rdfs:label": "Reference Area",
+            "rdfs:range": {"@id": "rdfs:Resource"},
+            "qb:codeList": {"@id": "TODO WHEN WE'VE FIGURED OUT NEW URL STRUCTURE" }
+            }
+        },
+        {
+            "qb:dimension": {
+            "@id": "http://gss-data.org.uk/def/dimension/ashe-statistics",
+            "@type": "qb:DimensionProperty",
+            "rdfs:label": "ashe statistics",
+            "rdfs:range": {"@id": "http://gss-data.org.uk/def/classes/ashe-statistics/ashe_statistics"},
+            "qb:codeList": {"@id": "TODO WHEN WE'VE FIGURED OUT NEW URL STRUCTURE" },
+            "skos:notation": "ashe-statistics"
+            }
+        },
+        {
+            "qb:dimension": {
+            "@id": "http://gss-data.org.uk/def/dimension/ashe-sex",
+            "@type": "qb:DimensionProperty",
+            "rdfs:label": "ashe sex",
+            "rdfs:range": { "@id": "http://gss-data.org.uk/def/classes/ashe-statistics/ashe_sex"},
+            "rdfs:subPropertyOf": "http://purl.org/linked-data/sdmx/2009/dimension#sex",
+            "qb:codeList": {"@id": "TODO WHEN WE'VE FIGURED OUT NEW URL STRUCTURE" },
+            "skos:notation": "ashe-sex"
+          }
+        },
+        {
+            "qb:dimension": {
+            "@id": "http://gss-data.org.uk/def/dimension/ashe-working-pattern",
+            "@type": "qb:DimensionProperty",
+            "rdfs:label": "ashe working pattern",
+            "rdfs:range": { "@id": "http://gss-data.org.uk/def/classes/ashe-statistics/ashe_working_pattern"},
+            "qb:codeList": {"@id": "TODO WHEN WE'VE FIGURED OUT NEW URL STRUCTURE" },
+            "skos:notation": "ashe-working-pattern"
+            }
+        },
+        {
+            "qb:dimension": {
+            "@id": "http://gss-data.org.uk/def/dimension/ashe-hours-and-earnings",
+            "@type": "qb:DimensionProperty",
+            "rdfs:label": "ashe hours and earnings",
+            "rdfs:range": { "@id": "http://gss-data.org.uk/def/classes/ashe-statistics/ashe_hours_and_earnings"},
+            "qb:codeList": {"@id": "TODO WHEN WE'VE FIGURED OUT NEW URL STRUCTURE" },
+            "skos:notation": "ashe-hours-and-earnings"
+            }
+        },
+        {
+            "qb:dimension": {
+            "@id": "http://gss-data.org.uk/def/dimension/ashe-workplace-or-residence",
+            "@type": "qb:DimensionProperty",
+            "rdfs:label": "ashe workplace or residence",
+            "rdfs:range": {"@id": "rdfs:Resource"},
+            "qb:codeList": {"@id": "TODO WHEN WE'VE FIGURED OUT NEW URL STRUCTURE" },
+            "skos:notation": "ashe-workplace-or-residence"
+            }
+        },
+        {
+          "qb:attribute": {
+          "@id": "http://gss-data.org.uk/def/attribute/cv",
+          "@type": [
+            "owl:ObjectProperty",
+            "qb:AttributeProperty",
+            "qb:CodedProperty"
+          ],
+          "qb:codeList": {
+            "@id": "http://purl.org/linked-data/sdmx/2009/code#obsStatus"
+          },
+          "rdfs:label": "coefficient of variation, a standardized measure of dispersion of a probability distribution or frequency distribution",
+          "rdfs:range": {
+              "@id": "http://purl.org/linked-data/sdmx/2009/code#ObsStatus"
+          },
+          "skos:notation": "cv"}
+        },
+        {
+          "qb:dimension": {
+          "@id": "http://purl.org/linked-data/cube#measureType",
+          "@type": "qb:MeasureType",
+          "rdfs:range": {"@id": "qb:MeasureProperty"}
+            },
+          "skos:notation": ""
+        },
+        {
+          "qb:measure": {
+              "@id": "http://gss-data.org.uk/def/measure/paid-hours-worked",
+              "@type": [
+                  "owl:DatatypeProperty",
+                  "qb:MeasureProperty"
+              ],
+              "http://def.seegrid.csiro.au/ontology/om/om-lite#uom": {
+                  "@id": "http://gss-data.org.uk/def/paid-hours-worked"
+                  },
+              "rdfs:label": "Paid hours worked",
+              "rdfs:range": {
+                  "@id": "http://gss-data.org.uk/def/paid-hours-worked"
+              },
+              "skos:notation": "percentage"
+            }
+        },
+        {
+          "qb:measure": {
+              "@id": "http://gss-data.org.uk/def/measure/pay-gbp",
+              "@type": [
+                  "owl:DatatypeProperty",
+                  "qb:MeasureProperty"
+              ],
+              "http://def.seegrid.csiro.au/ontology/om/om-lite#uom": {
+                  "@id": "http://gss-data.org.uk/def/pay-gbp"
+                  },
+              "rdfs:label": "Pay GBP",
+              "rdfs:range": {
+                  "@id": "http://gss-data.org.uk/def/pay-gbp"
+              },
+              "skos:notation": "pay-gbp"
+            }
+        },
+        {
+        "qb:attribute": {
+          "@id": "dc:spatial"
+        },
+        "qb:componentAttachment": {
+          "@id": "qb:DataSet"
+        },
+        "qb:componentRequired": true
+        }
+  ],
+"foreignKeys": [],
+"primaryKey": [
+      "year",
+      "geography",
+      "ashe_statistics",
+      "ashe_sex",
+      "ashe_working_pattern",
+      "ashe_hours_and_earnings",
+      "ashe_workplace_or_residence",
+      "measure_type"
+    ]
+}
