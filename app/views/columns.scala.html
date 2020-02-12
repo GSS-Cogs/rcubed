@@ -1,0 +1,28 @@
+@(columns: Seq[Column])
+
+@main("columns table") {
+    <table class="zebra-striped">
+        <tr>
+            <th>Title</th>
+            <th>Name</th>
+            <th>Value template</th>
+            <th>Property template</th>
+            <th>Datatype</th>
+            <th>Value transformation</th>
+            <th>Regex</th>
+            <th>Range</th>
+        </tr>
+        @columns.map { column =>
+            <tr>
+                <td>@column.title</td>
+                <td>@column.name</td>
+                <td>@column.value_template</td>
+                <td>@column.property_template</td>
+                <td>@column.datatype</td>
+                <td>@column.value_transformation</td>
+                <td>@column.regex</td>
+                <td>@column.range</td>
+            </tr>
+        }
+    </table>
+}

@@ -1,0 +1,99 @@
+Label,Description,Component Type,Codelist
+Household Disability Status,,Dimension,http://gss-data.org.uk/def/concept-scheme/household-disability-status
+Workless Household Type,,Dimension,http://gss-data.org.uk/def/concept-scheme/workless-household-type
+Percentage of People,The percentage of all people measured who meet the criteria,Measure,
+Identified support needs of homeless households,,Dimension,http://gss-data.org.uk/def/concept-scheme/identified-support-needs-of-homeless-households
+Reasons for failing to maintain accommodation,,Dimension,http://gss-data.org.uk/def/concept-scheme/reasons-for-failing-to-maintain-accommodation
+Reasons for homelessness application,,Dimension,http://gss-data.org.uk/def/concept-scheme/reasons-for-homelessness-application
+Indicator,,Dimension,http://gss-data.org.uk/def/concept-scheme/indicator
+Trend,,Dimension,http://gss-data.org.uk/def/concept-scheme/trend
+Standard Population,,Dimension,http://gss-data.org.uk/def/concept-scheme/phe-standard-population
+County & UA (pre Apr2019) deprivation deciles in England (IMD2015),,Dimension,http://gss-data.org.uk/def/concept-scheme/county-ua-pre-apr2019-deprivation-deciles-in-england-imd2015
+District & UA (pre Apr2019)  deprivation deciles in England (IMD2015),,Dimension,http://gss-data.org.uk/def/concept-scheme/district-ua-pre-apr2019-deprivation-deciles-in-england-imd2015
+"County & UA deprivation deciles in England (IMD2015, 419 geog)",,Dimension,http://gss-data.org.uk/def/concept-scheme/county-ua-deprivation-deciles-in-england-imd2015-419-geog
+"District & UA deprivation deciles in England (IMD2015, 419 geog)",,Dimension,http://gss-data.org.uk/def/concept-scheme/district-ua-deprivation-deciles-in-england-imd2015-419-geog
+"County & UA deprivation deciles in England (IMD2019, 419 geog)",,Dimension,http://gss-data.org.uk/def/concept-scheme/county-ua-deprivation-deciles-in-england-imd2019-419-geog
+"District & UA deprivation deciles in England (IMD2019, 419 geog)",,Dimension,http://gss-data.org.uk/def/concept-scheme/district-ua-deprivation-deciles-in-england-imd2019-419-geog
+County & UA deprivation deciles in England (IMD2010),,Dimension,http://gss-data.org.uk/def/concept-scheme/county-ua-deprivation-deciles-in-england-imd2010
+District & UA deprivation deciles in England (IMD2010),,Dimension,http://gss-data.org.uk/def/concept-scheme/district-ua-deprivation-deciles-in-england-imd2010
+Ethnic groups,,Dimension,http://gss-data.org.uk/def/concept-scheme/ethnic-groups
+LSOA11 deprivation deciles in England (IMD2015),,Dimension,http://gss-data.org.uk/def/concept-scheme/lsoa11-deprivation-deciles-in-england-imd2015
+Socioeconomic group (18-64 yrs),,Dimension,http://gss-data.org.uk/def/concept-scheme/socioeconomic-group-18-64-yrs
+Religion - 8 categories,,Dimension,http://gss-data.org.uk/def/concept-scheme/religion-8-categories
+Country of birth,,Dimension,http://gss-data.org.uk/def/concept-scheme/country-of-birth
+Health status,,Dimension,http://gss-data.org.uk/def/concept-scheme/health-status
+Sexuality - 5 categories,,Dimension,http://gss-data.org.uk/def/concept-scheme/sexuality-5-categories
+Percentage,Percentage,Measure,
+FRS Units,,Dimension,http://gss-data.org.uk/def/concept-scheme/frs-units
+Crude rate,,Measure,
+Score,,Measure,
+Directly standardised rate,,Measure,
+Indirectly standardised rate,,Measure,
+Indirectly standardised ratio,,Measure,
+Age,,Dimension,http://gss-data.org.uk/def/concept-scheme/phe-age
+Unit,,Dimension,http://gss-data.org.uk/def/concept-scheme/phe-unit
+Sex,,Dimension,http://gss-data.org.uk/def/concept-scheme/phe-sex
+DWP Age Group,,Dimension,http://gss-data.org.uk/def/concept-scheme/dwp-age-group
+DWP Referral Group,,Dimension,http://gss-data.org.uk/def/concept-scheme/dwp-referral-group
+DWP Referral Type,,Dimension,http://gss-data.org.uk/def/concept-scheme/dwp-referral-type
+DWP Area,,Dimension,http://gss-data.org.uk/def/concept-scheme/dwp-area
+DWP FRS People,,Dimension,http://gss-data.org.uk/def/concept-scheme/dwp-frs-people
+Measure Group,,Dimension,http://gss-data.org.uk/def/concept-scheme/measure-group
+NHS ASCOF Code,,Dimension,http://gss-data.org.uk/def/concept-scheme/nhs-ascof-code
+Disaggregation Level,,Dimension,http://gss-data.org.uk/def/concept-scheme/disaggregation-level
+FRS Ages,,Dimension,http://gss-data.org.uk/def/concept-scheme/frs-ages
+PHE Group,,Dimension,http://gss-data.org.uk/def/concept-scheme/phe-group
+Adult Carer,,Dimension,http://gss-data.org.uk/def/concept-scheme/adult-carer
+ONS Age Range,,Dimension,http://gss-data.org.uk/def/concept-scheme/ons-age-range
+GSS Harmonised,,Dimension,http://gss-data.org.uk/def/concept-scheme/gss-harmonised
+Economic Activity,,Dimension,http://gss-data.org.uk/def/concept-scheme/economic-activity
+Disability Definition Used,,Dimension,http://gss-data.org.uk/def/concept-scheme/disability-definition-used
+Status,The number of Guardianship cases which had a Date Case Closed within the reporting period which had not ended at the end of the reporting period ie had no Date Case Closed or  cases which had a Date Case Commenced date within within the reporting period,Dimension,http://gss-data.org.uk/def/concept-scheme/status
+Guardianship,,Dimension,http://gss-data.org.uk/def/concept-scheme/guardianship
+Section,,Dimension,http://gss-data.org.uk/def/concept-scheme/section
+Region name,the description of the geographic region in which the CASSR is located. These are the nine former Government offices for the regions (GOR),Dimension,http://gss-data.org.uk/def/concept-scheme/region-name
+Local authority code,,Dimension,http://gss-data.org.uk/def/concept-scheme/local-authority-code
+Local authority name,,Dimension,http://gss-data.org.uk/def/concept-scheme/local-authority-name
+Duration of closed cases,Duration of cases closed within the reporting period calculated from the difference between the Date Case Commenced and the Date Case Closed,Dimension,http://gss-data.org.uk/def/concept-scheme/duration-of-closed-cases
+Count,Count of People,Measure,
+NHS LDHC Quality Service,,Dimension,http://gss-data.org.uk/def/concept-scheme/nhs-ldhc-quality-service
+NHS LDHC Measure Code,,Dimension,http://gss-data.org.uk/def/concept-scheme/nhs-ldhc-measure-code
+GP Practice,,Dimension,http://gss-data.org.uk/def/concept-scheme/nhs-gp-practices
+NHS Geography,,Dimension,http://gss-data.org.uk/def/concept-scheme/nhs-geography
+Outcome,outcome,Measure,
+DfE Age Groups,,Dimension,http://gss-data.org.uk/def/concept-scheme/dfe-age-groups
+DfE Sex Groups,,Dimension,http://gss-data.org.uk/def/concept-scheme/dfe-sex-groups
+DfE Special Education Provider,,Dimension,http://gss-data.org.uk/def/concept-scheme/dfe-special-education-provider
+DfE Special Education Support Type,,Dimension,http://gss-data.org.uk/def/concept-scheme/dfe-special-education-support-type
+DfE Special Education Need Type,,Dimension,http://gss-data.org.uk/def/concept-scheme/dfe-special-education-need-type
+Breakdown,,Dimension,http://gss-data.org.uk/def/concept-scheme/breakdown
+CCG Indicator,,Dimension,http://gss-data.org.uk/def/concept-scheme/ccg-indicator
+NHS Level,,Dimension,http://gss-data.org.uk/def/concept-scheme/nhs-level
+Markers,,Attribute,http://gss-data.org.uk/def/concept-scheme/markers
+Standardised admission rate,,Measure,
+Standardised ratio,,Measure,
+Standardised emergency admission rate,,Measure,
+Ethnicity,,Dimension,http://gss-data.org.uk/def/concept-scheme/ethnicity
+Disability Status,,Dimension,http://gss-data.org.uk/def/concept-scheme/disability-status
+Nationality,,Dimension,http://gss-data.org.uk/def/concept-scheme/nationality
+Salary Band,,Dimension,http://gss-data.org.uk/def/concept-scheme/salary-band
+Department,,Dimension,http://gss-data.org.uk/def/concept-scheme/Department
+Profession of Post,,Dimension,http://gss-data.org.uk/def/concept-scheme/profession-of-post
+Type of Employment,,Dimension,http://gss-data.org.uk/def/concept-scheme/type-of-employment
+Status of Employment,,Dimension,http://gss-data.org.uk/def/concept-scheme/status-of-employment
+Entrants or Leavers,,Dimension,http://gss-data.org.uk/def/concept-scheme/entrants-or-leavers
+Responsibility Level,,Dimension,http://gss-data.org.uk/def/concept-scheme/responsibility-level
+NUTS Region name,,Dimension,http://gss-data.org.uk/def/concept-scheme/nuts-region-name
+NUTS Area Code,,Dimension,http://gss-data.org.uk/def/concept-scheme/nuts-area-code
+Life Expectancy Estimate Type,,Dimension,http://gss-data.org.uk/def/concept-scheme/life-expectancy-estimate-type
+Headcount,,Measure,
+Median gender pay gap in percent,,Measure,
+Mean Earnings,,Measure,
+Median Earnings,,Measure,
+Percentage of each Gender by department,,Measure,
+All Employees,,Measure,
+DfE Geography,,Dimension,http://gss-data.org.uk/def/concept-scheme/dfe-geography
+DfE Statements of SEN or EHC Plan Description,,Dimension,http://gss-data.org.uk/def/concept-scheme/dfe-statements-of-sen-or-ehc-plan-description
+DfE Statements or EHC Plan Type,,Dimension,http://gss-data.org.uk/def/concept-scheme/dfe-statements-of-sen-or-ehc-plan-type
+DfE Statements of SEN or EHC Plan Provider,,Dimension,http://gss-data.org.uk/def/concept-scheme/dfe-statements-of-sen-or-ehc-plan-provider
+DfE Marker,,Dimension,http://gss-data.org.uk/def/concept-scheme/dfe-marker

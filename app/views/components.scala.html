@@ -1,0 +1,20 @@
+@(components: Seq[Component])
+
+@main("components table") {
+    <table>
+        <tr>
+            <th>Label</th>
+            <th>Description</th>
+            <th>Component Type</th>
+            <th>Codelist</th>
+        </tr>
+        @components.map { component =>
+            <tr>
+                <td>@component.label</td>
+                <td>@component.description</td>
+                <td>@component.component_type</td>
+                <td>@component.codelist</td>
+            </tr>
+        }
+    </table>
+}
