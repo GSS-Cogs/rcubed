@@ -15,7 +15,7 @@ CREATE TABLE "columns" (
   "range" VARCHAR,
   PRIMARY KEY ("name"),
   --FOREIGN KEY To add in??? (PersonID) REFERENCES Persons(PersonID)
-) AS SELECT * FROM CSVREAD('columns.csv');
+);
 
 
 
@@ -26,7 +26,7 @@ CREATE TABLE "components" (
   "Codelist" VARCHAR,
   PRIMARY KEY ("Label"),
   --FOREIGN KEY To add in??? (PersonID) REFERENCES Persons(PersonID)
-) AS SELECT * FROM CSVREAD('components.csv');
+);
 
 -- !Downs
 

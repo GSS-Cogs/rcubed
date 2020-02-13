@@ -17,10 +17,19 @@
 
     </head>
     <body>
-        @* And here's where we render the `Html` object containing
-         * the page content. *@
-        @content
 
-      <script src="@routes.Assets.versioned("javascripts/main.js")" type="text/javascript"></script>
+        <header class="topbar">
+            <h1 class="fill" id="header-title">
+                <a href="@routes.ConfigController.index()">
+                    Reference Data Registry and Repository
+                </a>
+            </h1>
+        </header>
+
+        <section id="main">
+        @content
+        </section>
+
+        <script src="@routes.Assets.versioned("javascripts/main.js")" type="text/javascript"></script>
     </body>
 </html>

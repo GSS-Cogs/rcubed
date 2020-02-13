@@ -13,6 +13,7 @@ libraryDependencies += "com.typesafe.play" %% "play-slick-evolutions" % "5.0.0"
 libraryDependencies += "com.h2database" % "h2" % "1.4.199"
 libraryDependencies += specs2 % Test
 libraryDependencies += ws
+libraryDependencies += "com.github.tototoshi" %% "scala-csv" % "1.3.6"
 
 // Adds additional packages into Twirl
 //TwirlKeys.templateImports += "gsscogs.uk.controllers._"

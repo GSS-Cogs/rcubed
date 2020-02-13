@@ -1,13 +1,19 @@
 package models
 
-import javax.inject.{ Inject, Singleton }
+import java.net.{URI, URL}
+
+import javax.inject.{Inject, Singleton}
 import play.api.db.slick.DatabaseConfigProvider
 import slick.jdbc.JdbcProfile
 
-import scala.concurrent.{ Future, ExecutionContext }
+import scala.concurrent.{ExecutionContext, Future}
+import com.github.tototoshi.csv._
+
+import scala.io.Source
 
 @Singleton
 class Repository @Inject()(dbConfigProvider: DatabaseConfigProvider)(implicit ec: ExecutionContext) {
+
   private val dbConfig = dbConfigProvider.get[JdbcProfile]
 
   import dbConfig._
@@ -23,7 +29,9 @@ class Repository @Inject()(dbConfigProvider: DatabaseConfigProvider)(implicit ec
     def value_transformation = column[Option[String]]("value_transformation")
     def regex: Rep[Option[String]] = column[Option[String]]("regex")
     def range: Rep[Option[String]] = column[Option[String]]("range")
-    def * = (title, name, component_attachment, property_template, value_template, datatype, value_transformation, regex, range) <> ((Column.apply _).tupled, Column.unapply)
+    def group_id = column[String]("group_id")
+    def * = (title, name, component_attachment, property_template, value_template,
+      datatype, value_transformation, regex, range, group_id) <> ((Column.apply _).tupled, Column.unapply)
   }
 
   private val columns = TableQuery[ColumnTable]
@@ -46,4 +54,34 @@ class Repository @Inject()(dbConfigProvider: DatabaseConfigProvider)(implicit ec
   def listComponents(): Future[Seq[Component]] = db.run {
     components.result
   }
+
+  private class ConfigTable(tag: Tag) extends Table[Config](tag, "table2qb_config") {
+
+    def groupID = column[String]("group_id", O.PrimaryKey)
+    def label = column[Option[String]]("label")
+    def baseURL = column[String]("base_url")
+    def * = (groupID, label, baseURL) <> ((Config.apply _).tupled, Config.unapply)
+  }
+
+  private val configs = TableQuery[ConfigTable]
+
+  def createConfig(groupID: String, name: String, baseURL: String): Future[Int] = db.run {
+    configs += Config(groupID, Some(name), baseURL)
+  }
+
+  def loadNewConfig(config: Config) = {
+    val base = new URI(config.baseURL)
+    val columnsReader = CSVReader.open(Source.fromURL(base.resolve("columns.csv").toURL))
+    val componentsReader = CSVReader.open(Source.fromURL(base.resolve("components.csv").toURL))
+    val rows = columnsReader.iteratorWithHeaders.map { row =>
+      Column(row("title"), row("name"), row get "component_attachment", row("property_template"),
+        row get "value_template", row get "datatype", row get "value_transformation", row get "regex",
+        row get "range", config.groupID)
+    }
+    db.run(DBIO.seq(
+      columns ++= rows.to(Iterable),
+      configs += config
+    ))
+  }
+
 }

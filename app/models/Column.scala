@@ -10,7 +10,9 @@ case class Column(title: String,
                   datatype: Option[String],
                   value_transformation: Option[String],
                   regex: Option[String],
-                  range: Option[String])
+                  range: Option[String],
+                  group_id: String
+                 )
 
 object Column {
   implicit val columnFormat = Json.format[Column]

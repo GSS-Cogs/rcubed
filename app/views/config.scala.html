@@ -1,0 +1,19 @@
+@(config: Form[CreateConfigForm])(implicit request: MessagesRequestHeader)
+
+@import helper._
+
+@request.flash.get("success").map { key =>
+   @request.messages(key)
+}
+
+@main("Reference data registry/repository configuration") {
+  @form(routes.ConfigController.addConfig()) {
+		@inputText(config("label"))
+		@inputText(config("base_url"))
+		@CSRF.formField
+
+		<div class="buttons">
+			<input type="submit" value="Add Configuration"/>
+		</div>
+	}
+}
