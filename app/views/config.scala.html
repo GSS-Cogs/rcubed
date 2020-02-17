@@ -1,4 +1,4 @@
-@(config: Form[CreateConfigForm])(implicit request: MessagesRequestHeader)
+@(currentConfigs: Seq[Config], configForm: Form[CreateConfigForm])(implicit request: MessagesRequestHeader)
 
 @import helper._
 
@@ -6,10 +6,18 @@
    @request.messages(key)
 }
 
-@main("Reference data registry/repository configuration") {
+@main("Reference data registry/repository configuration", "config") {
+	<h2>table2qb configurations</h2>
+	<dl>
+	@currentConfigs.map { config =>
+		<dt>@config.label</dt>
+		<dd>@config.baseURL</dd>
+	}
+	</dl>
+	<hr />
   @form(routes.ConfigController.addConfig()) {
-		@inputText(config("label"))
-		@inputText(config("base_url"))
+		@inputText(configForm("label"))
+		@inputText(configForm("base_url"))
 		@CSRF.formField
 
 		<div class="buttons">

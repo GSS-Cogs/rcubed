@@ -1,13 +1,16 @@
 @(components: Seq[Component])
 
-@main("components table") {
-    <table>
-        <tr>
-            <th>Label</th>
-            <th>Description</th>
-            <th>Component Type</th>
-            <th>Codelist</th>
-        </tr>
+@main("rcubed: components table", "components") {
+    <table class="table table-striped">
+        <thead class="thead-light">
+            <tr>
+                <th>Label</th>
+                <th>Description</th>
+                <th>Component Type</th>
+                <th>Codelist</th>
+            </tr>
+        </thead>
+        <tbody>
         @components.map { component =>
             <tr>
                 <td>@component.label</td>
@@ -16,5 +19,6 @@
                 <td>@component.codelist</td>
             </tr>
         }
+        </tbody>
     </table>
 }

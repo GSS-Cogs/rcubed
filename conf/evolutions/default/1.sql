@@ -5,7 +5,7 @@
 
 CREATE TABLE "columns" (
   "title" VARCHAR,
-  "name" VARCHAR,
+  "name" VARCHAR NOT NULL,
   "component_attachment" VARCHAR,
   "property_template" VARCHAR,
   "value_template" VARCHAR,

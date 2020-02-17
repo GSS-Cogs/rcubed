@@ -4,10 +4,11 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET     /                           controllers.ConfigController.index
+GET     /                           controllers.HomeController.index
 GET     /columns                    controllers.HomeController.columns
 GET     /components                 controllers.HomeController.components
 
+GET     /config                     controllers.ConfigController.config
 POST    /config                     controllers.ConfigController.addConfig
 
 # Map static resources from the /public folder to the /assets URL path

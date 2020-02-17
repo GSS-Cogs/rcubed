@@ -81,7 +81,11 @@ class Repository @Inject()(dbConfigProvider: DatabaseConfigProvider)(implicit ec
     db.run(DBIO.seq(
       columns ++= rows.to(Iterable),
       configs += config
-    ))
+    ).transactionally)
+  }
+
+  def listConfigs(): Future[Seq[Config]] = db.run {
+    configs.result
   }
 
 }

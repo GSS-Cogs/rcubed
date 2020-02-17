@@ -1,17 +1,20 @@
 @(columns: Seq[Column])
 
-@main("columns table") {
-    <table class="table zebra-striped">
-        <tr>
-            <th>Title</th>
-            <th>Name</th>
-            <th>Value template</th>
-            <th>Property template</th>
-            <th>Datatype</th>
-            <th>Value transformation</th>
-            <th>Regex</th>
-            <th>Range</th>
-        </tr>
+@main("rcubed: columns table", "columns") {
+    <table class="table table-striped">
+        <thead class="thead-light">
+            <tr>
+                <th>Title</th>
+                <th>Name</th>
+                <th>Value template</th>
+                <th>Property template</th>
+                <th>Datatype</th>
+                <th>Value transformation</th>
+                <th>Regex</th>
+                <th>Range</th>
+            </tr>
+        </thead>
+        <tbody>
         @columns.map { column =>
             <tr>
                 <td>@column.title</td>
@@ -24,5 +27,6 @@
                 <td>@column.range</td>
             </tr>
         }
+        </tbody>
     </table>
 }

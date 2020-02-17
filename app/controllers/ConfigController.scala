@@ -21,21 +21,25 @@ class ConfigController @Inject()(repo: Repository,
     )(CreateConfigForm.apply)(CreateConfigForm.unapply)
   }
 
-  def index = Action { implicit request =>
-    Ok(views.html.config(configForm))
+  def config = Action.async { implicit request =>
+    repo.listConfigs().map {
+      configs => Ok(views.html.config(configs, configForm))
+    }
   }
 
   def addConfig = Action.async { implicit request =>
     configForm.bindFromRequest.fold(
       errorForm => {
-        Future.successful(BadRequest(views.html.config(errorForm)))
+        repo.listConfigs().map {
+          configs => Ok(views.html.config(configs, errorForm))
+        }
       },
       configForm => {
         val config = Config(
           configForm.name.replaceAll("[^\\w ]", "").replace(" ", "-").toLowerCase,
           Some(configForm.name), configForm.baseURL)
         repo.loadNewConfig(config).map { _ =>
-          Redirect(routes.ConfigController.index).flashing("success" -> "config.loaded")
+          Redirect(routes.ConfigController.config).flashing("success" -> "config.loaded")
         }
       }
     )
